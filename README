@@ -1,0 +1,18 @@
+# Full Stack Project
+
+## Frontend (User interface)
+
+1. Learn HTML structure, get basic understanding of CSS and implement into static HTML structure and learn JavaScript basics.
+2. Install NPM (JS Packet Manager), Git & GitHub setup with IDE & code editors such as Visual Studio & Visual Studio Code.
+3. Learn basic React & Tailwind CSS.
+
+## API (Application Programmable Interface, this is usually the middle man between frontend and backend).
+
+1. Basic understanding of the Internet how it works, inspecting elements, using network tab to understand information, what ports & status codes mean (just the general basics 200, 404, 500 to name a few).
+2. Understand RESTFUL HTTP commands; GET; POST; UPDATE; PATCH; DELETE, etc.
+
+## Backend (Data processing & CRUD operations to DB)
+
+1. Learn basic C# & SQL.
+2. Install docker instance with MSSQL instance, SSMS (SQL Manager by Microsoft, this is just GUI for the SQL), download Postman (optional) & LINQ or Notepad ++ (optional).
+3. N-Unit testing.
