@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Healthcare Patient Portal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fab159281fcb50332b91eeaa6d3d6999d4a10410")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59c9e2ffc7463fb23fb12264295266de8672965d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Healthcare Patient Portal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Healthcare Patient Portal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
