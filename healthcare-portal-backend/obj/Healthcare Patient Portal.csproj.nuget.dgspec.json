@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nabid\\source\\Repos\\Healthcare Patient Portal\\Healthcare Patient Portal.csproj": {}
+    "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nabid\\source\\Repos\\Healthcare Patient Portal\\Healthcare Patient Portal.csproj": {
+    "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nabid\\source\\Repos\\Healthcare Patient Portal\\Healthcare Patient Portal.csproj",
+        "projectUniqueName": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj",
         "projectName": "Healthcare Patient Portal",
-        "projectPath": "C:\\Users\\Nabid\\source\\Repos\\Healthcare Patient Portal\\Healthcare Patient Portal.csproj",
+        "projectPath": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj",
         "packagesPath": "C:\\Users\\Nabid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nabid\\source\\Repos\\Healthcare Patient Portal\\obj\\",
+        "outputPath": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nabid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,32 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

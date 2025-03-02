@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4eAWo538889Lg5BOEQxHOTyGkUeGGfMxnpUWK44K7wI=",
+  "Source": "Healthcare Patient Portal",
+  "BasePath": "_content/Healthcare Patient Portal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
