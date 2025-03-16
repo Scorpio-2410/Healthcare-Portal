@@ -14,8 +14,15 @@ namespace Healthcare_Patient_Portal.Features.User
             _mediator = mediator;
         }
 
-        [HttpPost]
+        [HttpPost("CreateUser")]
         public async Task<IActionResult> CreateUser([FromBody] CreateUser request)
+        {
+            var response = await _mediator.Send(request);
+            return Ok(response);
+        }
+        
+        [HttpDelete("DeleteUser/{id}")]
+        public async Task<IActionResult> DeleteUser(DeleteUser request)
         {
             var response = await _mediator.Send(request);
             return Ok(response);
