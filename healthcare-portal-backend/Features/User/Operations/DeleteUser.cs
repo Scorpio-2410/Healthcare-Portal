@@ -2,6 +2,7 @@
 using MediatR;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Healthcare_Patient_Portal.Features.User.Operations
 {
@@ -19,7 +20,11 @@ namespace Healthcare_Patient_Portal.Features.User.Operations
             _context = context;
             
             RuleLevelCascadeMode = CascadeMode.Stop;
-            RuleFor(x => x.UserId).NotEmpty().GreaterThan(0);
+            RuleFor(x => x.UserId).NotEmpty().GreaterThan(0).MustAsync(UserExists);
+        }
+        private async Task<bool> UserExists(int userId, CancellationToken cancellationToken)
+        {
+            return await _context.Users.AnyAsync(u => u.UserId == userId, cancellationToken);
         }
 
         public class DeleteUserHandler : IRequestHandler<DeleteUser, bool>
@@ -36,7 +41,7 @@ namespace Healthcare_Patient_Portal.Features.User.Operations
                 
                 if (user == null)
                 {
-                    return false;
+                    throw new KeyNotFoundException($"User with ID {request.UserId} not found.");
                 }
                 
                 _context.Users.Remove(user);

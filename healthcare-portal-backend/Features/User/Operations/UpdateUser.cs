@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Healthcare_Patient_Portal.Features.User.Operations
 {
-    public class FullUpdateUser : IRequest<bool>
+    public class UpdateUser : IRequest<bool>
     {
         [FromRoute] public int UserId { get; set; }
 
@@ -20,11 +20,11 @@ namespace Healthcare_Patient_Portal.Features.User.Operations
         public DateOnly Dob { get; set; }
     }
 
-    public class FullUpdateUserValidator : AbstractValidator<FullUpdateUser>
+    public class UpdateUserValidator : AbstractValidator<UpdateUser>
     {
         private readonly HealthcarePortalContext _context;
 
-        public FullUpdateUserValidator(HealthcarePortalContext context)
+        public UpdateUserValidator(HealthcarePortalContext context)
         {
             _context = context;
 
@@ -38,25 +38,28 @@ namespace Healthcare_Patient_Portal.Features.User.Operations
             
         }
         
-        async Task<bool> UserExists(int userId, CancellationToken cancellationToken)
+        private async Task<bool> UserExists(int userId, CancellationToken cancellationToken)
         {
             return await _context.Users.AnyAsync(u => u.UserId == userId, cancellationToken);
         }
         
-        public class FullUpdateUserHandler : IRequestHandler<FullUpdateUser, bool>
+        public class UpdateUserHandler : IRequestHandler<UpdateUser, bool>
         {
             readonly HealthcarePortalContext _context;
 
-            public FullUpdateUserHandler(HealthcarePortalContext context)
+            public UpdateUserHandler(HealthcarePortalContext context)
             {
                 _context = context;
             }
 
-            public async Task<bool> Handle(FullUpdateUser request, CancellationToken cancellationToken)
+            public async Task<bool> Handle(UpdateUser request, CancellationToken cancellationToken)
             {
                 var user = await _context.Users.FindAsync(request.UserId);
-                
-                if(user == null)return false;
+
+                if (user == null)
+                {
+                    throw new KeyNotFoundException($"User with ID {request.UserId} not found.");
+                }
                 
                 user.RoleType = request.RoleType;
                 user.FirstName = request.FirstName;

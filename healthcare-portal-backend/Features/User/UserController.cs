@@ -21,14 +21,21 @@ namespace Healthcare_Patient_Portal.Features.User
             return Ok(response);
         }
 
-        [HttpPut("FullUpdateUser")]
-        public async Task<IActionResult> FullUpdateUser(FullUpdateUser request)
+        [HttpGet("SearchUser/{UserId}")]
+        public async Task<IActionResult> SearchUser(SearchUser request)
+        {
+            var response = await _mediator.Send(request);
+            return Ok(response);
+        }
+
+        [HttpPatch("UpdateUser/{UserId}")]
+        public async Task<IActionResult> UpdateUser(UpdateUser request)
         {
             var response = await _mediator.Send(request);
             return Ok(response);
         }
         
-        [HttpDelete("DeleteUser/{id}")]
+        [HttpDelete("DeleteUser/{UserId}")]
         public async Task<IActionResult> DeleteUser(DeleteUser request)
         {
             var response = await _mediator.Send(request);
