@@ -20,6 +20,13 @@ namespace Healthcare_Patient_Portal.Features.User
             var response = await _mediator.Send(request);
             return Ok(response);
         }
+
+        [HttpPut("FullUpdateUser")]
+        public async Task<IActionResult> FullUpdateUser(FullUpdateUser request)
+        {
+            var response = await _mediator.Send(request);
+            return Ok(response);
+        }
         
         [HttpDelete("DeleteUser/{id}")]
         public async Task<IActionResult> DeleteUser(DeleteUser request)

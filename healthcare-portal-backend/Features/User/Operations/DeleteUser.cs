@@ -7,7 +7,7 @@ namespace Healthcare_Patient_Portal.Features.User.Operations
 {
     public class DeleteUser : IRequest<bool>
     {
-        [FromHeader] public int UserId { get; set; }
+        [FromRoute] public int UserId { get; set; }
     }
 
     public class DeleteUserValidator : AbstractValidator<DeleteUser>
