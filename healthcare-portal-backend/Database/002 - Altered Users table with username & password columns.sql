@@ -1,0 +1,3 @@
+ALTER TABLE Users
+ADD username VARCHAR(64) NULL,
+    password VARCHAR(255) NULL;
