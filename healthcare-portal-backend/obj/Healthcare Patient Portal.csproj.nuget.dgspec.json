@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj": {}
+    "/Users/nabidulislam/Desktop/Nabidul/Programming/Healthcare-Portal/healthcare-portal-backend/Healthcare Patient Portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj": {
+    "/Users/nabidulislam/Desktop/Nabidul/Programming/Healthcare-Portal/healthcare-portal-backend/Healthcare Patient Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj",
+        "projectUniqueName": "/Users/nabidulislam/Desktop/Nabidul/Programming/Healthcare-Portal/healthcare-portal-backend/Healthcare Patient Portal.csproj",
         "projectName": "Healthcare Patient Portal",
-        "projectPath": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\Healthcare Patient Portal.csproj",
-        "packagesPath": "C:\\Users\\Nabid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nabid\\OneDrive\\Desktop\\Software\\Programming\\Healthcare Portal\\healthcare-portal-backend\\obj\\",
+        "projectPath": "/Users/nabidulislam/Desktop/Nabidul/Programming/Healthcare-Portal/healthcare-portal-backend/Healthcare Patient Portal.csproj",
+        "packagesPath": "/Users/nabidulislam/.nuget/packages/",
+        "outputPath": "/Users/nabidulislam/Desktop/Nabidul/Programming/Healthcare-Portal/healthcare-portal-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nabid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/nabidulislam/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,35 +43,55 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -96,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

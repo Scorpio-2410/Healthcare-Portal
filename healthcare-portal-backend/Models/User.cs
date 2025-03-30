@@ -15,6 +15,10 @@ public partial class User
 
     public DateOnly Dob { get; set; }
 
+    public string Username { get; set; } = null!;
+
+    public string Password { get; set; } = null!;
+
     public virtual HealthcareProvider? HealthcareProvider { get; set; }
 
     public virtual Patient? Patient { get; set; }
